@@ -1,1 +1,1 @@
-web: bundle exec ruby funcional.rb -p $PORT
+web: bundle exec ruby dm-rate.rb -p $PORT
