@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <%= partial(:'partials/head') %>
+
+    <%= yield_content :head %>
+
+  </head>
+
+  <body>
+	<%= partial(:'partials/header') %>
+
+	<%= yield_content :header %>
+
+    <%= yield %>
+
+    <%= partial(:'partials/footer') %>
+
+    <%= yield_content :footer %>
+
+  </body>
+
+</html>
