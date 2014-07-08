@@ -8,14 +8,6 @@ require "uri"
 require "json"
 
 Bundler.require
-include Mongo
-
-# configuration
-configure :development do
-  MongoMapper.setup({'development' => {'uri' => 'mongodb://root:root@localhost:27017/dm-rate'}}, 'development')
-end
-
-
 
 ## project includes
 
@@ -27,4 +19,4 @@ require './helper/CountryHelper.rb'
 # controllers
 require './controller/AppController.rb'
 require './controller/ReviewController.rb'
-#require './controller/UserController.rb'
+
